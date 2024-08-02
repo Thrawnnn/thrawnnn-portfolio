@@ -3,24 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>We appreciate You <3</title>
+    <title>Thrawn's Portfolio</title>
     <style>
         body {
-            height: 100vh;
-            margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 100vh;
+            margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, hotpink, red);
+            background-color: black;
         }
-        .thank-you {
-            font-size: 48px;
-            color: dodgerblue;
+        h1 {
+            font-size: 3em;
+            transition: opacity 1s ease-in-out;
         }
     </style>
 </head>
 <body>
-    <div class="thank-you">Thank You</div>
+    <h1 id="welcome"></h1>
+    <script>
+        const languages = [
+            "Welcome",       // English
+            "Bienvenue",     // French
+            "Willkommen",    // German
+            "Bienvenido",    // Spanish
+            "Benvenuto",     // Italian
+            "欢迎",           // Chinese (Simplified)
+            "ようこそ",        // Japanese
+            "환영합니다",      // Korean
+            "Добро пожаловать", // Russian
+            "مرحبا"          // Arabic
+        ];
+        
+        let index = 0;
+        const welcomeElement = document.getElementById('welcome');
+
+        function changeLanguage() {
+            welcomeElement.style.opacity = 0;
+            setTimeout(() => {
+                welcomeElement.textContent = languages[index];
+                welcomeElement.style.opacity = 1; // fade
+                index = (index + 1) % languages.length;
+            }, 500);
+        }
+
+        setInterval(changeLanguage, 1000);
+    </script>
 </body>
 </html>
