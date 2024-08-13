@@ -151,6 +151,10 @@ section {
   border-radius: 8px;
 }
 
+.project-video { 
+  padding-top: 40px;
+}
+
 .skills-list {
   display: flex;
   flex-wrap: wrap;
@@ -202,6 +206,7 @@ footer {
       padding: 8px 16px;
   }
 }
+
 
 
 @media screen and (min-width: 500px) {
