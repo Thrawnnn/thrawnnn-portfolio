@@ -5,6 +5,7 @@ body {
   box-sizing: border-box;
   background-color: #fff;
   color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header {
@@ -15,16 +16,7 @@ header {
   height: 7%;
   top: 0;
   z-index: 1000;
-}
-
-.profile-pic {
-  position: relative;
-  top: -75px; 
-}
-
-li {
-  list-style: none;
-  margin: 0 15px;
+  transition: background-color 0.3s ease;
 }
 
 header nav ul li a {
@@ -38,9 +30,8 @@ header nav ul li a {
   align-items: center;
   margin: 1em;
   transition: all 500ms ease;
-
   position: relative;
-  top: -5px; 
+  top: -5px;
 }
 
 header nav ul li a:hover {
@@ -48,8 +39,8 @@ header nav ul li a:hover {
 }
 
 header nav ul li a img {
-  vertical-align: middle; 
-  margin-bottom: 5px; 
+  vertical-align: middle;
+  margin-bottom: 5px;
   margin-right: 5px;
   color: #fff;
   font-size: 3em;
@@ -71,9 +62,9 @@ nav ul li {
 }
 
 nav ul li a {
-  background: linear-gradient(to right, rgb(255, 0, 200) , rgb(0, 238, 255));
-			-webkit-text-fill-color: transparent;
-			-webkit-background-clip: text;
+  background: linear-gradient(to right, rgb(255, 0, 200), rgb(0, 238, 255));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   text-decoration: none;
   font-weight: 600;
   transition: box-shadow 0.3s ease, background-image 0.3s ease;
@@ -88,6 +79,7 @@ section {
   padding: 60px 20px;
   max-width: 1200px;
   margin: 0 auto;
+  transition: background-color 0.3s ease;
 }
 
 #hero {
@@ -98,12 +90,12 @@ section {
   justify-content: center;
   color: white;
   text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .hero-content h1 {
   font-size: 3rem;
   margin: 0;
-  
 }
 
 .hero-content p {
@@ -111,7 +103,7 @@ section {
 }
 
 .btn {
-  background-image: linear-gradient(to right, rgb(255, 60, 0) , rgb(255, 0, 200));
+  background-image: linear-gradient(to right, rgb(255, 60, 0), rgb(255, 0, 200));
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -124,19 +116,14 @@ section {
 }
 
 .btn:hover {
-  background-image: linear-gradient(to right, rgb(255, 60, 0) , rgb(255, 0, 200));
+  background-image: linear-gradient(to right, rgb(255, 60, 0), rgb(255, 0, 200));
   color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 15px;
-  margin-top: 20px;
-  display: inline-block;
-  font-weight: 600;
   box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
 }
 
 #about {
   background-color: white;
+  transition: background-color 0.3s ease;
 }
 
 .project-grid {
@@ -149,6 +136,7 @@ section {
   background-color: #e3e3e3;
   padding: 20px;
   border-radius: 8px;
+  transition: background-color 0.3s ease;
 }
 
 .project-video { 
@@ -169,11 +157,13 @@ section {
   color: white;
   padding: 10px 20px;
   border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #contact {
   background-color: #fff;
   text-align: center;
+  transition: background-color 0.3s ease;
 }
 
 footer {
@@ -181,10 +171,11 @@ footer {
   padding: 20px 0;
   background-color: #333;
   color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .myam-blamo { 
-  background: linear-gradient(to right, red , blue);
+  background: linear-gradient(to right, red, blue);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -193,24 +184,105 @@ footer {
   color: #c300ff;
 }
 
-@media (max-width: 768px) {
-  .hero-content h1 {
-      font-size: 2.5rem;
-  }
-
-  .hero-content p {
-      font-size: 1.2rem;
-  }
-
-  .btn {
-      padding: 8px 16px;
-  }
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 }
 
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
 
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: background-color 0.4s ease;
+  border-radius: 34px;
+}
 
-@media screen and (min-width: 500px) {
-  ul {
-      display: flex;
-  }
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: transform 0.4s ease;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+body.dark-mode {
+  background-color: #2b2929;
+  color: #e0e0e0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header.dark-mode {
+  background-color: #1c1c1c;
+}
+
+header nav ul li a.dark-mode {
+  background-color: hsl(0, 2%, 24%);
+  border: 2px solid #0ebac5;
+}
+
+header nav ul li a.dark-mode:hover {
+  box-shadow: 0 0 20px #0ebac5;
+}
+
+nav ul li a.dark-mode {
+  background: linear-gradient(to right, rgb(255, 0, 200), rgb(0, 238, 255));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+#hero.dark-mode {
+  background: url('icons/bg.png') no-repeat center center/cover;
+}
+
+.project.dark-mode {
+  background-color: #3a3a3a;
+}
+
+.skills-list li.dark-mode {
+  background-color: #444;
+}
+
+#about.dark-mode {
+  background-color: #2b2929;
+}
+
+#contact.dark-mode {
+  background-color: #2b2929;
+}
+
+footer.dark-mode {
+  background-color: #1c1c1c;
+}
+
+.profile-pic {
+  position: relative;
+  top: -75px; 
 }
