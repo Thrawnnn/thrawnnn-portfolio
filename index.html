@@ -90,6 +90,12 @@
     <section id="contact">
         <h2>Contact</h2>
         <p>If you'd like to get in touch, feel free to reach out via discord @ thrawn9999 or email @ lotisify@gmail.com.</p>
+        <h3>Toggle Dark Mode</h3>
+        <label class="switch">
+          <input type="checkbox" id="darkModeToggle">
+          <span class="slider"></span>
+      </label>
+      </div>
     </section>
 
     <footer>
@@ -105,6 +111,47 @@
                 });
             });
         });
+        document.addEventListener('DOMContentLoaded', () => {
+          const toggle = document.getElementById('darkModeToggle');
+
+          const applyDarkMode = () => {
+              document.body.classList.add('dark-mode');
+              document.querySelectorAll('.project').forEach(el => el.classList.add('dark-mode'));
+              document.querySelectorAll('.skills-list li').forEach(el => el.classList.add('dark-mode'));
+              document.querySelectorAll('header').forEach(el => el.classList.add('dark-mode'));
+              document.querySelectorAll('#about').forEach(el => el.classList.add('dark-mode'));
+              document.querySelectorAll('#contact').forEach(el => el.classList.add('dark-mode'));
+              document.querySelectorAll('footer').forEach(el => el.classList.add('dark-mode'));
+              document.querySelectorAll('#hero').forEach(el => el.classList.add('dark-mode'));
+          };
+
+          const removeDarkMode = () => {
+              document.body.classList.remove('dark-mode');
+              document.querySelectorAll('.project').forEach(el => el.classList.remove('dark-mode'));
+              document.querySelectorAll('.skills-list li').forEach(el => el.classList.remove('dark-mode'));
+              document.querySelectorAll('header').forEach(el => el.classList.remove('dark-mode'));
+              document.querySelectorAll('#about').forEach(el => el.classList.remove('dark-mode'));
+              document.querySelectorAll('#contact').forEach(el => el.classList.remove('dark-mode'));
+              document.querySelectorAll('footer').forEach(el => el.classList.remove('dark-mode'));
+              document.querySelectorAll('#hero').forEach(el => el.classList.remove('dark-mode'));
+          };
+
+          if (localStorage.getItem('dark-mode') === 'enabled') {
+              applyDarkMode();
+              toggle.checked = true;
+          }
+
+          toggle.addEventListener('change', () => {
+              if (toggle.checked) {
+                  applyDarkMode();
+                  localStorage.setItem('dark-mode', 'enabled');
+              } else {
+                  removeDarkMode();
+                  localStorage.setItem('dark-mode', 'disabled');
+              }
+          });
+      }); // Dark mode
+      
     </script>
 </body>
 </html>
