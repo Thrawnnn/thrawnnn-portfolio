@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrawn's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap">
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <img src="icons/TH.png" alt="Profile Picture" class="profile-pic">
+  </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1 class="name">Hello, I'm Orion</h1>
+            <p class="myam-blamo">I'm a GMod Developer passionate about UI Design</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I started development at the start of 2023 in Java and JavaFX. I then moved on to code for my Garry's Mod Server and found it to be quite fun to program Graphics. Once I found my Niche I started taking small jobs eventually landing a job at Project: Warfront where I am today.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <!-- JAVA FX Flappy bird -->
+            <div class="project">
+                <h3>Java FX Flappy Bird</h3>
+                <p>Yep, you heard it right. During my First year in Computer Science I made a remake of a game in Java FX. This game was flappy bird and has been collecting dust for some time now in my Github</p>
+            </div>
+            <!-- Complexity networks -->
+            <div class="project">
+                <h3>Complexity Networks Half-Life 2 Roleplay</h3>
+                <p>This was a Garry's mod server I ran in the beginning of 2023. This helped me the most in my Garry's Mod career and has taught me a lot about server-client relationships and Graphical Design.</p>
+            </div>
+            <!-- Project Warfront -->
+            <div class="project">
+              <h3>Project: Warfront - UI/UX Developer</h3>
+              <p>I am currently a UI/UX Developer for Project: Warfront. I work as their sole specialist in the field.</p>
+          </div>
+          <!-- BOLT -->
+          <div class="project">
+            <h3>BOLT: Framework</h3>
+            <p>BOLT was my first GMod Gamemode which is unfortunately still WIP and therefore Closed Source except to testers. The goal of BOLT was to be a visually appealing Gmod CVR Gamemode boilerplate for anyone interested in CvR. It is modular and very editable since it is an extension of GMod's sandbox gamemode.</p>
+        </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>UI/UX Designer</li>
+            <li>Gmod UI Developer</li>
+            <li>Gmod addon creator</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch, feel free to reach out via discord @ thrawn9999 or email @ lotisify@gmail.com.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Orion Rutten. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
