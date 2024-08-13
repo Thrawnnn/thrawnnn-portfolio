@@ -83,8 +83,7 @@ section {
 }
 
 #hero {
-  background: url('icons/bg.png') no-repeat center center/cover;
-  height: 50%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
