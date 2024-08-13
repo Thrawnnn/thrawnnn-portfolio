@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f4f4f4;
+  background-color: #fff;
   color: #333;
 }
 
@@ -19,7 +19,7 @@ header {
 
 .profile-pic {
   position: relative;
-  top: -135px; 
+  top: -75px; 
 }
 
 li {
@@ -30,8 +30,8 @@ li {
 header nav ul li a {
   background-color: hsl(0, 2%, 16%);
   width: 90px;
-  height: 85px;
-  border-radius: 50%;
+  height: 30px;
+  border-radius: 5px;
   border: 2px solid #0ebac5;
   display: flex;
   justify-content: center;
@@ -40,7 +40,7 @@ header nav ul li a {
   transition: all 500ms ease;
 
   position: relative;
-  top: -30px; 
+  top: -5px; 
 }
 
 header nav ul li a:hover {
@@ -168,7 +168,7 @@ section {
 }
 
 #contact {
-  background-color: white;
+  background-color: #fff;
   text-align: center;
 }
 
