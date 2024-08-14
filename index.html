@@ -123,7 +123,8 @@
               document.querySelectorAll('#contact').forEach(el => el.classList.add('dark-mode'));
               document.querySelectorAll('footer').forEach(el => el.classList.add('dark-mode'));
               document.querySelectorAll('#hero').forEach(el => el.classList.add('dark-mode'));
-          };
+              document.querySelectorAll('.hero-content').forEach(el => el.classList.add('dark-mode'));
+          }; // add in new elements for dark mode capability
 
           const removeDarkMode = () => {
               document.body.classList.remove('dark-mode');
@@ -134,12 +135,13 @@
               document.querySelectorAll('#contact').forEach(el => el.classList.remove('dark-mode'));
               document.querySelectorAll('footer').forEach(el => el.classList.remove('dark-mode'));
               document.querySelectorAll('#hero').forEach(el => el.classList.remove('dark-mode'));
-          };
+              document.querySelectorAll('.hero-content').forEach(el => el.classList.remove('dark-mode'));
+          }; // same as above just remove them
 
           if (localStorage.getItem('dark-mode') === 'enabled') {
               applyDarkMode();
               toggle.checked = true;
-          }
+          } // dogshit code
 
           toggle.addEventListener('change', () => {
               if (toggle.checked) {
