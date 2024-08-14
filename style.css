@@ -262,11 +262,6 @@ nav ul li a.dark-mode {
   padding: 25px;
 }
 
-video {
-  border-radius: 10px; 
-  overflow: hidden; 
-}
-
 .hero-content.dark-mode { 
   border-radius: 10px;
   border-width: medium;
@@ -276,8 +271,6 @@ video {
   color: #15002e;
   box-shadow: 0 0 42px #15002e;
 }
-
-
 
 .project.dark-mode {
   background-color: #15002e;
