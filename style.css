@@ -262,6 +262,16 @@ nav ul li a.dark-mode {
   padding: 25px;
 }
 
+.project-video {
+  border-radius: 10px;
+  border-width: medium;
+  border-color: #15002e;
+  background-color: #15002e;
+  padding: 25px;
+  color: #15002e;
+  box-shadow: 0 0 42px #15002e;
+}
+
 .hero-content.dark-mode { 
   border-radius: 10px;
   border-width: medium;
