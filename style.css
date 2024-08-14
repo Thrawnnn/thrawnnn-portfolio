@@ -117,7 +117,7 @@ section {
 .btn:hover {
   background-image: linear-gradient(to right, rgb(255, 60, 0), rgb(255, 0, 200));
   color: white;
-  box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+  box-shadow: 12.0px 16.0px 32.0px hsl(0deg 0% 0% / 0.25);
 }
 
 #about {
@@ -257,15 +257,30 @@ nav ul li a.dark-mode {
   -webkit-background-clip: text;
 }
 
-#hero.dark-mode {
+.hero-content { 
+  border-radius: 10px;
+  padding: 25px;
 }
 
+.hero-content.dark-mode { 
+  border-radius: 10px;
+  border-width: medium;
+  border-color: #15002e;
+  background-color: #15002e;
+  padding: 25px;
+  color: #15002e;
+  box-shadow: 0 0 42px #15002e;
+}
+
+
+
 .project.dark-mode {
-  background-color: #3a3a3a;
+  background-color: #15002e;
+  box-shadow: 0 0 42px #15002e;
 }
 
 .skills-list li.dark-mode {
-  background-color: #444;
+  background-color: #15002e;
 }
 
 #about.dark-mode {
