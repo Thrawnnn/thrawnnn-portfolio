@@ -262,14 +262,9 @@ nav ul li a.dark-mode {
   padding: 25px;
 }
 
-.project-video {
-  border-radius: 10px;
-  border-width: medium;
-  border-color: #15002e;
-  background-color: #15002e;
-  padding: 25px;
-  color: #15002e;
-  box-shadow: 0 0 42px #15002e;
+video {
+  border-radius: 10px; 
+  overflow: hidden; 
 }
 
 .hero-content.dark-mode { 
@@ -303,6 +298,11 @@ nav ul li a.dark-mode {
 
 footer.dark-mode {
   background-color: #1c1c1c;
+}
+
+.profile-pic {
+  position: relative;
+  top: -75px; 
 }
 
 .profile-pic {
