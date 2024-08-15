@@ -3,13 +3,13 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #fff;
-  color: #333;
+  background-color: #2b2929;
+  color: #e0e0e0;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header {
-  background-color: #333;
+  background-color: #1c1c1c;
   padding: 1rem 0;
   position: fixed;
   width: 100%;
@@ -20,7 +20,7 @@ header {
 }
 
 header nav ul li a {
-  background-color: hsl(0, 2%, 16%);
+  background-color: hsl(0, 2%, 24%);
   width: 90px;
   height: 30px;
   border-radius: 5px;
@@ -92,6 +92,16 @@ section {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.hero-content {
+  border-radius: 10px;
+  border-width: medium;
+  border-color: #15002e;
+  background-color: #15002e;
+  padding: 25px;
+  color: #15002e;
+  box-shadow: 0 0 42px #15002e;
+}
+
 .hero-content h1 {
   font-size: 3rem;
   margin: 0;
@@ -117,11 +127,12 @@ section {
 .btn:hover {
   background-image: linear-gradient(to right, rgb(255, 60, 0), rgb(255, 0, 200));
   color: white;
+  text-shadow: -1px -1px 7px #6f00ff;
   box-shadow: 12.0px 16.0px 32.0px hsl(0deg 0% 0% / 0.25);
 }
 
 #about {
-  background-color: white;
+  background-color: #2b2929;
   transition: background-color 0.3s ease;
 }
 
@@ -132,13 +143,14 @@ section {
 }
 
 .project {
-  background-color: #e3e3e3;
+  background-color: #15002e;
   padding: 20px;
   border-radius: 8px;
   transition: background-color 0.3s ease;
+  box-shadow: 0 0 42px #15002e;
 }
 
-.project-video { 
+.project-video {
   padding-top: 40px;
 }
 
@@ -152,7 +164,7 @@ section {
 }
 
 .skills-list li {
-  background-color: #333;
+  background-color: #15002e;
   color: white;
   padding: 10px 20px;
   border-radius: 20px;
@@ -160,7 +172,7 @@ section {
 }
 
 #contact {
-  background-color: #fff;
+  background-color: #2b2929;
   text-align: center;
   transition: background-color 0.3s ease;
 }
@@ -168,134 +180,38 @@ section {
 footer {
   text-align: center;
   padding: 20px 0;
-  background-color: #333;
+  background-color: #1c1c1c;
   color: white;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.myam-blamo { 
+.myam-blamo {
   background: linear-gradient(to right, red, blue);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
-.name { 
+.name {
   color: #c300ff;
+  overflow: hidden;
+  text-shadow: -1px -1px 7px #6f00ff;
+  border-right: .15em solid rgb(98, 0, 255);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
 
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
-.switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: background-color 0.4s ease;
-  border-radius: 34px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  transition: transform 0.4s ease;
-  border-radius: 50%;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  transform: translateX(26px);
-}
-
-body.dark-mode {
-  background-color: #2b2929;
-  color: #e0e0e0;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-header.dark-mode {
-  background-color: #1c1c1c;
-}
-
-header nav ul li a.dark-mode {
-  background-color: hsl(0, 2%, 24%);
-  border: 2px solid #0ebac5;
-}
-
-header nav ul li a.dark-mode:hover {
-  box-shadow: 0 0 20px #0ebac5;
-}
-
-nav ul li a.dark-mode {
-  background: linear-gradient(to right, rgb(255, 0, 200), rgb(0, 238, 255));
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-
-.hero-content { 
-  border-radius: 10px;
-  padding: 25px;
-}
-
-.hero-content.dark-mode { 
-  border-radius: 10px;
-  border-width: medium;
-  border-color: #15002e;
-  background-color: #15002e;
-  padding: 25px;
-  color: #15002e;
-  box-shadow: 0 0 42px #15002e;
-}
-
-.project.dark-mode {
-  background-color: #15002e;
-  box-shadow: 0 0 42px #15002e;
-}
-
-.skills-list li.dark-mode {
-  background-color: #15002e;
-}
-
-#about.dark-mode {
-  background-color: #2b2929;
-}
-
-#contact.dark-mode {
-  background-color: #2b2929;
-}
-
-footer.dark-mode {
-  background-color: #1c1c1c;
-}
-
-.profile-pic {
-  position: relative;
-  top: -75px; 
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #6f00ff; }
 }
 
 .profile-pic {
