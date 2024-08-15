@@ -1,9 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #2b2929;
+        color: #e0e0e0;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        header {
+        background-color: #1c1c1c;
+        padding: 1rem 0;
+        position: fixed;
+        width: 100%;
+        height: 7%;
+        top: 0;
+        z-index: 1000;
+        transition: background-color 0.3s ease;
+        }
+
+        header nav ul li a {
+        background-color: hsl(0, 2%, 24%);
+        width: 90px;
+        height: 30px;
+        border-radius: 5px;
+        border: 2px solid #0ebac5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1em;
+        transition: all 500ms ease;
+        position: relative;
+        top: -5px;
+        }
+
+        header nav ul li a:hover {
+        box-shadow: 0 0 20px #0ebac5;
+        }
+
+        header nav ul li a img {
+        vertical-align: middle;
+        margin-bottom: 5px;
+        margin-right: 5px;
+        color: #fff;
+        font-size: 3em;
+        border: none;
+        }
+
+        nav ul {
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        }
+
+        nav ul li {
+        margin: 0 25px;
+        }
+
+        nav ul li a {
+        background: linear-gradient(to right, rgb(255, 0, 200), rgb(0, 238, 255));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        text-decoration: none;
+        font-weight: 600;
+        transition: box-shadow 0.3s ease, background-image 0.3s ease;
+        }
+
+        nav ul li a:hover {
+        color: #0ebac5;
+        box-shadow: 0 0 12px #0ebac5;
+        }
+
+        section {
+        padding: 60px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        transition: background-color 0.3s ease;
+        }
+
+        #hero {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .hero-content {
+        border-radius: 10px;
+        border-width: medium;
+        border-color: #15002e;
+        background-color: #15002e;
+        padding: 25px;
+        color: #15002e;
+        box-shadow: 0 0 42px #15002e;
+        }
+
+        .hero-content h1 {
+        font-size: 3rem;
+        margin: 0;
+        }
+
+        .hero-content p {
+        font-size: 1.5rem;
+        }
+
+        .btn {
+        background-image: linear-gradient(to right, rgb(255, 60, 0), rgb(255, 0, 200));
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 15px;
+        margin-top: 20px;
+        display: inline-block;
+        font-weight: 600;
+        box-shadow: 8.0px 12.0px 12px hsl(0deg 0% 0% / 0.25);
+        transition: box-shadow 0.3s ease, background-image 0.3s ease;
+        }
+
+        .btn:hover {
+        background-image: linear-gradient(to right, rgb(255, 60, 0), rgb(255, 0, 200));
+        color: white;
+        text-shadow: -1px -1px 7px #6f00ff;
+        box-shadow: 12.0px 16.0px 32.0px hsl(0deg 0% 0% / 0.25);
+        }
+
+        #about {
+        background-color: #2b2929;
+        transition: background-color 0.3s ease;
+        }
+
+        .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        }
+
+        .project {
+        background-color: #15002e;
+        padding: 20px;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 0 42px #15002e;
+        }
+
+        .project-video {
+        padding-top: 40px;
+        }
+
+        .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        list-style: none;
+        padding: 0;
+        justify-content: center;
+        }
+
+        .skills-list li {
+        background-color: #15002e;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 20px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        #contact {
+        background-color: #2b2929;
+        text-align: center;
+        transition: background-color 0.3s ease;
+        }
+
+        footer {
+        text-align: center;
+        padding: 20px 0;
+        background-color: #1c1c1c;
+        color: white;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .myam-blamo {
+        background: linear-gradient(to right, red, blue);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        }
+
+        .name {
+        color: #c300ff;
+        overflow: hidden;
+        text-shadow: -1px -1px 7px #6f00ff;
+        border-right: .15em solid rgb(98, 0, 255);
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .15em;
+        animation: 
+            typing 3.5s steps(40, end),
+            blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #6f00ff; }
+        }
+
+        .profile-pic {
+        position: relative;
+        top: -75px; 
+        }
+    </style>
     <meta charset="UTF-8">
     <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAABP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAQAAAAABEAABEAAAABEAAAARAAABEAEAAAEQABEAARAAABEBEAAAEQAAARARAAABEAARAAEQAAAQARAAABEAAAARAAAAARAAARAAAAAAEAABAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD73wAA888AAOfnAADN8wAAnPkAAD58AACfOQAAz7MAAOfnAADzzwAA+98AAP//AAD//wAA" rel="icon" type="image/x-icon">
-    <link href="style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thrawn's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
@@ -109,4 +330,3 @@
     </script>
 </body>
 </html>
-
