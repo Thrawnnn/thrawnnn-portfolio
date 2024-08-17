@@ -367,6 +367,29 @@
         opacity: 0;
       }
     }
+    
+    .moon {
+      width: 20rem;
+      height: 20rem;
+      position: absolute;
+      border-radius: 50%;
+      background-image: url('https://www.solarsystemscope.com/textures/download/2k_moon.jpg');
+      background-size: 110% 100%;
+      animation-name: moonRotation;
+      animation-duration: 15s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-fill-mode: forwards !important;
+      box-shadow: inset -10px 8px 6px -5px #ffffff,
+      inset 20px -20px 50px 43px rgba(0, 0, 0, 0.9), 
+      7px -6px 14px rgba(255, 255, 255, 0.3215686275);
+    }
+
+    @keyframes moonRotation {
+      0% { background-position: 0% 0%; }
+      50% { background-position: 150% 0%; }
+      100% { background-position: 300% 0%; }
+    }
 
     body {
       font-family: "Raleway", sans-serif;
@@ -524,6 +547,12 @@
   <div class="meteor-13"></div>
   <div class="meteor-14"></div>
   <div class="meteor-15"></div>
+  <div class="moon"></div>
+
+  <!-- 
+    Stars and meteor crap for the background
+  -->
+
   <div class="all">
     <a href="webdev.html" target="_blank" class="lefter">
       <div class="text">Frontend Dev Student</div>
