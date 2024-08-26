@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+      background-image: radial-gradient(ellipse at top, #080e21 0%, #1b2735 95%);
+    }
+
+    .meteor-1 {
+      position: absolute;
+      top: 275px;
+      left: 69%;
+      width: 300px;
+      height: 1px;
+      transform: rotate(-45deg);
+      background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+      animation: meteor 4.1s linear infinite;
+    }
+
+    .meteor-1:before {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 5px;
+      border-radius: 50%;
+      margin-top: -2px;
+      background: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 0 15px 3px #fff;
+    }
+
+    .meteor-2 {
+      position: absolute;
+      top: 244px;
+      left: 32%;
+      width: 300px;
+      height: 1px;
+      transform: rotate(-45deg);
+      background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+      animation: meteor 6s linear infinite;
+    }
+
+    .meteor-2:before {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 5px;
+      border-radius: 50%;
+      margin-top: -2px;
+      background: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 0 15px 3px #fff;
+    }
+
+    .meteor-3 {
+      position: absolute;
+      top: 263px;
+      left: 84%;
+      width: 300px;
+      height: 1px;
+      transform: rotate(-45deg);
+      background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+      animation: meteor 4.2s linear infinite;
+    }
+
+    .meteor-3:before {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 5px;
+      border-radius: 50%;
+      margin-top: -2px;
+      background: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 0 15px 3px #fff;
+    }
+
+    .meteor-4 {
+      position: absolute;
+      top: 225px;
+      left: 79%;
+      width: 300px;
+      height: 1px;
+      transform: rotate(-45deg);
+      background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+      animation: meteor 4.6s linear infinite;
+    }
+
+    .meteor-4:before {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 5px;
+      border-radius: 50%;
+      margin-top: -2px;
+      background: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 0 15px 3px #fff;
+    }
+
+    .meteor-5 {
+      position: absolute;
+      top: 111px;
+      left: 76%;
+      width: 300px;
+      height: 1px;
+      transform: rotate(-45deg);
+      background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+      animation: meteor 7.8s linear infinite;
+    }
+
+    .meteor-5:before {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 5px;
+      border-radius: 50%;
+      margin-top: -2px;
+      background: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 0 15px 3px #fff;
+    }
+
+    .meteor-6 {
+      position: absolute;
+      top: 222px;
+      left: 34%;
+      width: 300px;
+      height: 1px;
+      transform: rotate(-45deg);
+      background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+      animation: meteor 5.7s linear infinite;
+    }
+
+    .meteor-6:before {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 5px;
+      border-radius: 50%;
+      margin-top: -2px;
+      background: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 0 15px 3px #fff;
+    }
+
+    .meteor-7 {
+      position: absolute;
+      top: 224px;
+      left: 40%;
+      width: 300px;
+      height: 1px;
+      transform: rotate(-45deg);
+      background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+      animation: meteor 4.4s linear infinite;
+    }
+
+    .meteor-7:before {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 5px;
+      border-radius: 50%;
+      margin-top: -2px;
+      background: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 0 15px 3px #fff;
+    }
+
+    .meteor-8 {
+      position: absolute;
+      top: 286px;
+      left: 81%;
+      width: 300px;
+      height: 1px;
+      transform: rotate(-45deg);
+      background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+      animation: meteor 8.4s linear infinite;
+    }
+
+    .meteor-8:before {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 5px;
+      border-radius: 50%;
+      margin-top: -2px;
+      background: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 0 15px 3px #fff;
+    }
+
+    .meteor-9 {
+      position: absolute;
+      top: 265px;
+      left: 53%;
+      width: 300px;
+      height: 1px;
+      transform: rotate(-45deg);
+      background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+      animation: meteor 8.3s linear infinite;
+    }
+
+    .meteor-9:before {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 5px;
+      border-radius: 50%;
+      margin-top: -2px;
+      background: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 0 15px 3px #fff;
+    }
+
+    .meteor-10 {
+      position: absolute;
+      top: 150px;
+      left: 92%;
+      width: 300px;
+      height: 1px;
+      transform: rotate(-45deg);
+      background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+      animation: meteor 8.6s linear infinite;
+    }
+
+    .meteor-10:before {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 5px;
+      border-radius: 50%;
+      margin-top: -2px;
+      background: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 0 15px 3px #fff;
+    }
+
+    .meteor-11 {
+      position: absolute;
+      top: 148px;
+      left: 78%;
+      width: 300px;
+      height: 1px;
+      transform: rotate(-45deg);
+      background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+      animation: meteor 8.1s linear infinite;
+    }
+
+    .meteor-11:before {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 5px;
+      border-radius: 50%;
+      margin-top: -2px;
+      background: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 0 15px 3px #fff;
+    }
+
+    .meteor-12 {
+      position: absolute;
+      top: 223px;
+      left: 62%;
+      width: 300px;
+      height: 1px;
+      transform: rotate(-45deg);
+      background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+      animation: meteor 7.2s linear infinite;
+    }
+
+    .meteor-12:before {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 5px;
+      border-radius: 50%;
+      margin-top: -2px;
+      background: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 0 15px 3px #fff;
+    }
+
+    .meteor-13 {
+      position: absolute;
+      top: 261px;
+      left: 67%;
+      width: 300px;
+      height: 1px;
+      transform: rotate(-45deg);
+      background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+      animation: meteor 5s linear infinite;
+    }
+
+    .meteor-13:before {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 5px;
+      border-radius: 50%;
+      margin-top: -2px;
+      background: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 0 15px 3px #fff;
+    }
+
+    .meteor-14 {
+      position: absolute;
+      top: 88px;
+      left: 54%;
+      width: 300px;
+      height: 1px;
+      transform: rotate(-45deg);
+      background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+      animation: meteor 5.3s linear infinite;
+    }
+
+    .meteor-14:before {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 5px;
+      border-radius: 50%;
+      margin-top: -2px;
+      background: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 0 15px 3px #fff;
+    }
+
+    .meteor-15 {
+      position: absolute;
+      top: 145px;
+      left: 65%;
+      width: 300px;
+      height: 1px;
+      transform: rotate(-45deg);
+      background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+      animation: meteor 8.2s linear infinite;
+    }
+
+    .meteor-15:before {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 5px;
+      border-radius: 50%;
+      margin-top: -2px;
+      background: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 0 15px 3px #fff;
+    }
+
+    @keyframes meteor {
+      0% {
+        opacity: 1;
+        margin-top: -300px;
+        margin-right: -300px;
+      }
+
+      12% {
+        opacity: 0;
+      }
+
+      15% {
+        margin-top: 300px;
+        margin-left: -600px;
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes moonRotation {
+      0% { background-position: 0% 0%; }
+      50% { background-position: 150% 0%; }
+      100% { background-position: 300% 0%; }
+    }
+
+    body {
+      font-family: "Raleway", sans-serif;
+      background-image: radial-gradient(circle at center, #899Dc4, #495D84);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(ellipse at bottom, #1b2735, #090a0f);
+      font-weight: 300;
+    }
+
+.all h1{
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.all h4{
+  color: #b6b6b9;
+  margin-bottom: 2rem;
+}
+
+.all h2{
+  color: #b6b6b9;
+  margin-bottom: 2rem;
+}
+
+@font-face {
+  font-family: mont;
+  src: url(Montserrat-Medium.ttf);
+}
+
+.all p{
+  color: #c6c6ff;
+  margin-bottom: 2rem;
+}
+
+.all{
+  font-family: mont;
+  margin: 0 auto;
+  padding: 2em;
+  width: 900px;
+  background: #1c1f2b3f;
+  text-align: center;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 10px;
+  position: relative;
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/*
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.all::after, .all::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
+}
+.all::before{
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+  */
+
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+  to{
+    --angle: 360deg;
+  }
+}
+
+.moon {
+      width: 20rem;
+      height: 20rem;
+      position: absolute;
+      border-radius: 50%;
+      background-image: url('https://www.solarsystemscope.com/textures/download/2k_moon.jpg');
+      background-size: 110% 100%;
+      animation-name: moonRotation;
+      animation-duration: 15s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-fill-mode: forwards !important;
+      box-shadow: inset -10px 8px 6px -5px #ffffff,
+      inset 20px -20px 50px 43px rgba(0, 0, 0, 0.9), 
+      7px -6px 14px rgba(255, 255, 255, 0.3215686275);
+    }
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-family: Poppins, 'Segoe UI', sans-serif;
+}
+body{
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.socials-container{
+  display: flex;
+  gap: 20px;
+
+  font-family: mont;
+  margin: 0 auto;
+  padding: .75em;
+  background: #1c1f2b3f;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 10px;
+  position: relative;
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
+}
+.socials-container a{
+  background-color: white;
+  padding: 1em;
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.socials-container a svg{
+  height: 32px;
+}
+.socials-container a::before{
+  content: attr(data-social);
+  position: absolute;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 100px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  transform: translateY(-30px) rotate(25deg);
+  opacity: 0;
+  transition: 200ms cubic-bezier(.42,0,.44,1.68);
+}
+
+.socials-container a:hover{
+  background-color: var(--accent-color);
+  fill: white;
+}
+.socials-container a::after{
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid var(--accent-color);
+  transform: translateY(0) rotate(25deg);
+  opacity: 0;
+  transition: 200ms cubic-bezier(.42,0,.44,1.68);
+}
+.socials-container a:hover::before{
+  transform: translateY(-65px) rotate(0);
+  opacity: 1;
+}
+.socials-container a:hover::after{
+  transform: translateY(-42px) rotate(0);
+  opacity: 1;
+}
+
+.socials-container a[data-social="Instagram"]:hover {
+  background: linear-gradient(
+    to right,
+    #833ab4,#fd1d1d,#fcb045
+  );
+}
+
+.projectwarfront {
+  padding-top: 1rem;
+  border-color:#5e6874;
+  border-style: groove;
+  border-width: 1px;
+  border-radius: 10px;
+}
+  </style>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="icons/edit-alt.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+</head>
+<body>
+  <div class="star"></div>
+  <div class="meteor-1"></div>
+  <div class="meteor-2"></div>
+  <div class="meteor-3"></div>
+  <div class="meteor-4"></div>
+  <div class="meteor-5"></div>
+  <div class="meteor-6"></div>
+  <div class="meteor-7"></div>
+  <div class="meteor-8"></div>
+  <div class="meteor-9"></div>
+  <div class="meteor-10"></div>
+  <div class="meteor-11"></div>
+  <div class="meteor-12"></div>
+  <div class="meteor-13"></div>
+  <div class="meteor-14"></div>
+  <div class="meteor-15"></div>
+  <div class="moon"></div>
+
+  <!-- 
+    Stars and meteor crap for the background
+  -->
+    <div class="all">
+        <h1>
+            My Big Projects:
+        </h1>
+
+        <div class="projectwarfront">
+          <h2>
+            PROJECT: Warfront UI
+          </h2>
+          <p>
+            This is a Character Creation Menu I made for PROJECT: Warfront in the HELIX Framework, using Lua and the GLUA library.
+          </p>
+
+          <video width="320" height="240" controls>
+            <source src="videos/project-warfront.mp4" type="video/mp4">
+            Your browser does not support videos. 
+          </video>
+
+          <h4>
+            CLOSED SOURCE
+          </h4>
+        </div>
+    </div>
+
+    <div class="socials-container">
+      <a data-social="GitHub" style="--accent-color: #24292e;" href="https://github.com/Thrawnnn?ocid=AIDcmmcwpj1e5v_SEM__k_Cj0KCQjw2uiwBhCXARIsACMvIU1k2EjE6xeaazyB_wHZ6_SjyEQq16n9VpJYCVJyIStrFXw5Qebn6SkaAk2JEALw_wcB_k_">
+        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      </a>
+      <a data-social="YouTube" style="--accent-color: red;" href="https://www.youtube.com/@thrawn14">
+        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      </a>
+      <a data-social="Instagram" style="--accent-color: #833ab4;" href="https://instagram.com/rutten_orion?igsh=Zmd6ZWRgNmx3ZGJ0&utm_source=qr">
+        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+      </a>
+      <a data-social="Discord" style="--accent-color: #5759c9;" href="https://discord.gg/b6MzFXf5ge">
+        <svg role="img" viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418m7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418"></path></svg>
+      </a>
+    </div>
+</body>
+</html>
