@@ -420,34 +420,6 @@
   -webkit-backdrop-filter: blur(10px);
 }
 
-/*
-
-@property --angle{
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
-
-.all::after, .all::before{
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  z-index: -1;
-  padding: 3px;
-  border-radius: 10px;
-  animation: 3s spin linear infinite;
-}
-.all::before{
-  filter: blur(1.5rem);
-  opacity: 0.5;
-}
-  */
-
 @keyframes spin{
   from{
     --angle: 0deg;
@@ -557,11 +529,19 @@ body{
   transform: translateY(-42px) rotate(0);
   opacity: 1;
 }
+    
 .warfront{
   text-decoration: none;
   text-shadow: 0px 0px 10px #00ffff;
   color: #00ffff;
 }
+        
+.warfront:hover{
+  text-decoration: none;
+  text-shadow: 0px 0px 25px #00ffff;
+  color: #00ffff;
+}
+
 
 .socials-container a[data-social="Instagram"]:hover {
   background: linear-gradient(
